@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #eb370a;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #eb370a;
+    border-bottom: 3px solid #eb370a;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #eb370a;
+        border-bottom: 3px solid #eb370a;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #eb370a;
+    }
+}
+
+section{
+    /*min-height: 100vh;*/
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #eb370a;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #eb370a;
+    cursor: pointer;
+    transition: 0.2s linear;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.nosotros{
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.nosotros p{
+    margin-top: 20px;
+    text-align: center;
+    color: #eb370a;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.contactos{
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contactos li{
+    margin-top: 5px;
+    list-style: none;
+    text-align: center;
+    color: #eb370a;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.redes{
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+i{
+    text-align: center;
+    font-size: 25px;
+    color: #eb370a;
+    margin: 20px;
+    border-radius: 50%;
+    border: 0.2rem solid #eb370a;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    transition: .3s ease;
+}
+
+i:hover {
+    border-color: white; /* Change border color to white on hover */
+}
+
+.fa-whatsapp:hover{
+    background-color: rgb(13, 155, 13);
+    color: white;
+    box-shadow: 0 0 15px rgb(13, 155, 13),
+                0 0 45px rgb(13, 155, 13),
+                0 0 75px rgb(13, 155, 13),
+                0 0 115px rgb(13, 155, 13);
+}
+.fa-facebook:hover{
+    background-color: rgb(29, 64, 218);
+    color: white;
+    box-shadow: 0 0 15px rgb(29, 64, 218),
+                0 0 45px rgb(29, 64, 218),
+                0 0 75px rgb(29, 64, 218),
+                0 0 115px rgb(29, 64, 218);
+}
+.fa-instagram:hover{
+    background-color: rgb(238, 72, 21);
+    color: white;
+    box-shadow: 0 0 15px rgb(238, 72, 21),
+                0 0 45px rgb(238, 72, 21),
+                0 0 75px rgb(238, 72, 21),
+                0 0 115px rgb(238, 72, 21);
+}
+.fa-x:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0 0 15px rgb(0, 0, 0),
+                0 0 45px rgb(0, 0, 0),
+                0 0 75px rgb(0, 0, 0),
+                0 0 115px rgb(0, 0, 0);
+}
+.fa-youtube:hover{
+    background-color: rgb(197, 18, 18);
+    color: white;
+    box-shadow: 0 0 15px rgb(197, 18, 18),
+                0 0 45px rgb(197, 18, 18),
+                0 0 75px rgb(197, 18, 18),
+                0 0 115px rgb(197, 18, 18);
+}
+
